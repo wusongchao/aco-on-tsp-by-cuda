@@ -318,7 +318,7 @@ __global__ void initializeEachAntsBestLength(float* length)
 int main()
 {
 	constexpr int antNum = 32;
-	constexpr int iterTimes = 100;
+	constexpr int iterTimes = 600;
 	double alpha = 1;//信息素的重要程度
 	double beta = 3.8;//启发式因子的重要程度
 	double rho = 0.7;//挥发系数
