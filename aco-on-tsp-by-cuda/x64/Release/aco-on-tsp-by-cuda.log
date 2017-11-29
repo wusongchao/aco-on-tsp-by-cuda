@@ -17,7 +17,7 @@ c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\device_functions
 c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\device_double_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\sm_20_intrinsics.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\sm_20_intrinsics.h(943): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-H:/Discrete mathematics/aco-on-tsp-by-cuda/aco-on-tsp-by-cuda/kernel.cu(325): warning : variable "left" was declared but never referenced
+H:/Discrete mathematics/aco-on-tsp-by-cuda/aco-on-tsp-by-cuda/kernel.cu(223): warning : variable "left" was declared but never referenced
 c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\math_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\math_functions.h(849): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\math_functions.h(1787): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
@@ -34,7 +34,7 @@ c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\device_functions
 c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\device_double_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\sm_20_intrinsics.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\sm_20_intrinsics.h(943): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
-H:/Discrete mathematics/aco-on-tsp-by-cuda/aco-on-tsp-by-cuda/kernel.cu(325): warning : variable "left" was declared but never referenced
+H:/Discrete mathematics/aco-on-tsp-by-cuda/aco-on-tsp-by-cuda/kernel.cu(223): warning : variable "left" was declared but never referenced
 c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\math_functions.h : warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\math_functions.h(849): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\math_functions.h(1787): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
@@ -101,8 +101,7 @@ c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\math_functions.h
 c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\math_functions.h(7142): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
 c:\program files\nvidia gpu computing toolkit\cuda\v8.0\include\math_functions.h(7956): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
   kernel.cu
-H:/Discrete mathematics/aco-on-tsp-by-cuda/aco-on-tsp-by-cuda/kernel.cu(91): warning C4267: “初始化”: 从“size_t”转换到“int”，可能丢失数据
-H:/Discrete mathematics/aco-on-tsp-by-cuda/aco-on-tsp-by-cuda/kernel.cu(379): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
+H:/Discrete mathematics/aco-on-tsp-by-cuda/aco-on-tsp-by-cuda/kernel.cu(277): warning C4244: “参数”: 从“double”转换到“float”，可能丢失数据
   LINK : 已指定 /LTCG，但不需要生成代码；从链接命令行中移除 /LTCG 以提高链接器性能
   aco-on-tsp-by-cuda.vcxproj -> H:\Discrete mathematics\aco-on-tsp-by-cuda\x64\Release\aco-on-tsp-by-cuda.exe
   aco-on-tsp-by-cuda.vcxproj -> H:\Discrete mathematics\aco-on-tsp-by-cuda\x64\Release\aco-on-tsp-by-cuda.pdb (Full PDB)
