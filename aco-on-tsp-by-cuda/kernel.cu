@@ -91,13 +91,13 @@ __shared__ float denominatorSum;
 __shared__ bool allowed[MAX_POINT_NUM];
 
 
-__inline__ __device__ void calculateProbability(int tid, float* Tau, float* heuristicValue, int cityNum, float alpha, float beta)
+__inline__ __device__ void calculateProbability(int tid, float* Tau, const float* heuristicValue, int cityNum, float alpha, float beta)
 {
 	// each thread mapped to a city(start from zero)
 	if (allowed[tid] == true) {
 		const int offset = MAX_POINT_NUM;
 		// must ensure that val not all is 0, so, have to make Tau an initial value instead of 0
-		float val = powf(Tau[current * offset + tid], alpha)*powf(heuristicValue[current * offset + tid], beta);
+		float val = __powf(Tau[current * offset + tid], alpha)*__powf(heuristicValue[current * offset + tid], beta);
 		// means possibility from current to tid
 		probabilities[tid] = val;
 		atomicAdd(&denominatorSum, val);
@@ -121,7 +121,7 @@ __inline__ __device__ int selectCity(curandState* state, int cityNum)
 	return selectedIndex;
 }
 
-__global__ void constructPath(float* Tau, float* deltaTau, float* graphMatrix, float* heuristicValue, curandState* states, int cityNum, float alpha, float beta, int Q, 
+__global__ void constructPath(float* Tau, float* deltaTau, const float* graphMatrix, const float* heuristicValue, curandState* states, int cityNum, float alpha, float beta, int Q, 
 	float* bestLength, int* bestPath)
 {
 	int tid = threadIdx.x;
